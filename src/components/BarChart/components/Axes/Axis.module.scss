@@ -1,0 +1,92 @@
+@import '/src/components/BarChart/variables';
+
+//----- VALUES DERIVED FROM CONSTANTS -----//
+$category-axis-total-padding: $CATEGORY_LABEL_SIZE + $CATEGORY_AXIS_LABEL_MARGIN;
+$quantity-axis-total-padding: $QUANTITY_AXIS_TICK_LENGTH + $QUANTITY_LABEL_SIZE +
+  $QUANTITY_AXIS_LABEL_MARGIN;
+
+//----- LAYOUT VARIABLES -----//
+$x-axis-label-height: $CATEGORY_LABEL_SIZE;
+$y-axis-tick-length: $QUANTITY_AXIS_TICK_LENGTH;
+
+$x-axis-total-padding: $category-axis-total-padding;
+$y-axis-total-padding: $quantity-axis-total-padding;
+
+.x-axis-layout-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: $x-axis-total-padding;
+  width: 100%;
+  padding-left: $y-axis-total-padding;
+
+  .x-axis {
+    height: 100%;
+    width: 100%;
+    border-top: $AXIS_LINE_WIDTH solid white;
+    margin-top: -$AXIS_LINE_WIDTH;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .x-axis-label {
+    margin-top: $CATEGORY_AXIS_LABEL_MARGIN;
+    flex: 1;
+    height: $x-axis-label-height;
+    display: flex;
+    justify-content: center;
+    font-weight: $FONT_WEIGHT_BOLD;
+  }
+}
+
+.y-axis-layout-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-top: $AXIS_ARROW_SIZE;
+  padding-bottom: $x-axis-total-padding;
+  width: $y-axis-total-padding;
+
+  .y-axis {
+    height: 100%;
+    width: 100%;
+    border-right: $AXIS_LINE_WIDTH solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  // Arrow at end of axis
+  &::before {
+    content: '';
+    display: block;
+    height: $AXIS_ARROW_SIZE;
+    width: $AXIS_ARROW_SIZE;
+    position: absolute;
+    left: $y-axis-total-padding - ($AXIS_ARROW_SIZE / 2) - 1;
+    top: 0;
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-linecap='round' stroke-width='2' preserveAspectRatio='none' viewBox='0 0 20 20'><path vector-effect='non-scaling-stroke' d='M5 9l5-7 5 7M10 2v18'/></svg>");
+  }
+
+  .y-axis-label {
+    height: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: $y-axis-tick-length + $QUANTITY_AXIS_LABEL_MARGIN;
+
+    // axis tick
+    &::after {
+      content: '';
+      display: block;
+      height: $AXIS_LINE_WIDTH;
+      width: $y-axis-tick-length;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: white;
+    }
+  }
+}

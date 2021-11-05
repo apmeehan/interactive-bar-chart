@@ -1,0 +1,33 @@
+@import './variables';
+
+//----- VALUES DERIVED FROM CONSTANTS -----//
+$category-axis-total-padding: $CATEGORY_LABEL_SIZE + $CATEGORY_AXIS_LABEL_MARGIN;
+$quantity-axis-total-padding: $QUANTITY_AXIS_TICK_LENGTH + $QUANTITY_LABEL_SIZE +
+  $QUANTITY_AXIS_LABEL_MARGIN;
+
+//----- LAYOUT VARIABLES -----//
+$x-axis-label-height: $CATEGORY_LABEL_SIZE;
+$y-axis-tick-length: $QUANTITY_AXIS_TICK_LENGTH;
+
+$x-axis-total-padding: $category-axis-total-padding;
+$y-axis-total-padding: $quantity-axis-total-padding;
+
+.main-container {
+  position: relative;
+  padding-top: $AXIS_ARROW_SIZE;
+  padding-left: $y-axis-total-padding;
+  padding-bottom: $x-axis-total-padding;
+  width: 100%;
+  height: 100%;
+
+  font-size: $FONT_SIZE;
+  line-height: 1;
+  color: white;
+
+  svg,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

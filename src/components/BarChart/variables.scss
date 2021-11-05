@@ -1,0 +1,27 @@
+// Adjustable layout options
+
+//----- BAR COLORS -----//
+$DEFAULT_COLORS: deeppink, deepskyblue, orange;
+
+//----- CONTENT -----//
+$FONT_SIZE: 18px;
+$CATEGORY_LABEL_SIZE: 34px;
+$QUANTITY_LABEL_SIZE: 20px;
+
+//----- LAYOUT -----//
+$CATEGORY_GAP: 30px;
+$SERIES_GAP: 6px;
+
+$AXIS_LINE_WIDTH: 2px;
+
+$CATEGORY_AXIS_LABEL_MARGIN: 4px;
+$QUANTITY_AXIS_LABEL_MARGIN: 4px;
+
+$QUANTITY_AXIS_TICK_LENGTH: 6px;
+
+//----- CHART ELEMENTS -----//
+$AXIS_ARROW_SIZE: 30px;
+$TRANSITION_DURATION: 0.2s;
+
+//----- TYPOGRAPHY ------//
+$FONT_WEIGHT_BOLD: 700;

@@ -1,0 +1,103 @@
+$container-width: 100px;
+
+$increment-color: black;
+$increment-bg-color: white;
+$increment-bg-color--hover: rgba($increment-bg-color, 0.8);
+
+$decrement-color: white;
+$decrement-bg-color: rgba($decrement-color, 0);
+$decrement-bg-color--hover: rgba($decrement-bg-color, 0.2);
+
+$font-weight-bold: 700;
+
+$button-travel: 3px;
+$button-edge-color: rgba(white, 0.5);
+
+.root {
+  // To make svgs/imgs responsive.
+  // Using min-height/min-width is safer than height/width, as otherwise could override existing height/width values of svgs/img
+  // (and setting height/width to 100% could result in height/width of 0 if image's parent doesn't have an explicit height/width)
+  svg,
+  img {
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  display: inline-block;
+  max-width: $container-width;
+  width: 100%;
+  font-weight: $font-weight-bold;
+  font-size: 18px;
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: $button-travel;
+  color: #333;
+  user-select: none;
+
+  &__button {
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transition: background 0.1s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    &:active {
+      transition: background 0.5s, transform 0.05s, box-shadow 0.05s;
+    }
+
+    &--left,
+    &--right {
+      &:active {
+        box-shadow: 0 0 $button-edge-color;
+      }
+    }
+
+    &--left {
+      border-radius: 25px 5px 5px 25px;
+      color: $decrement-color;
+      background: $decrement-bg-color;
+      border: 2px solid $increment-bg-color;
+      border-right-width: 0;
+      box-shadow: ($button-travel / 2) $button-travel 0 $button-edge-color;
+
+      &:hover {
+        background: $decrement-bg-color--hover;
+      }
+
+      &:active {
+        transform: translate(($button-travel / 2), $button-travel);
+      }
+    }
+
+    &--right {
+      border-radius: 5px 25px 25px 5px;
+      color: $increment-color;
+      background: $increment-bg-color;
+      border: 2px solid transparent;
+      border-left-width: 0;
+      box-shadow: (-$button-travel / 2) $button-travel 0 $button-edge-color;
+
+      &:hover {
+        background: $increment-bg-color--hover;
+      }
+
+      &:active {
+        transform: translate((-$button-travel / 2), $button-travel);
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      cursor: unset;
+      opacity: 0.1;
+    }
+  }
+}

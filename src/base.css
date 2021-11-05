@@ -1,0 +1,23 @@
+@import '~@fontsource/roboto/400.css';
+@import '~@fontsource/roboto/700.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}

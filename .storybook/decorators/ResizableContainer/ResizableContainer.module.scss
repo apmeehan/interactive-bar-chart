@@ -1,0 +1,41 @@
+$ARROW_SIZE: 20px;
+$ARROW_OFFSET: 10px;
+$TEXT_WIDTH: 100px;
+
+.root {
+  position: relative;
+  outline: 1px dashed rgba(white, 0.3);
+  height: fit-content;
+  width: fit-content;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    resize: both;
+    overflow: hidden;
+  }
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    color: rgba(white, 0.3);
+  }
+
+  &::before {
+    content: '⇧';
+    font-size: $ARROW_SIZE;
+    bottom: -$ARROW_SIZE - $ARROW_OFFSET;
+    right: -$ARROW_SIZE / 2;
+  }
+
+  &::after {
+    content: 'RESIZABLE';
+    font-size: 0.9rem;
+    width: $TEXT_WIDTH;
+    text-align: center;
+    bottom: calc(-#{$ARROW_SIZE + $ARROW_OFFSET} - 1.1em);
+    right: -$TEXT_WIDTH / 2;
+  }
+}

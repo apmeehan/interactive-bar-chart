@@ -1,0 +1,40 @@
+@import '/src/components/BarChart/variables';
+
+.bar {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all $TRANSITION_DURATION;
+
+  &--placeholder:not(&--pictograms) {
+    border: 2px dashed rgba(white, 0.5);
+    border-bottom: 0;
+  }
+
+  &--pictograms {
+    transition: none;
+  }
+
+  .pictogram {
+    min-height: 0;
+    flex: 1;
+    margin: 2px;
+    border-radius: 5px;
+    animation: pictogram-appear $TRANSITION_DURATION;
+
+    &--placeholder {
+      border: 2px dashed rgba(white, 0.5);
+      animation: none;
+    }
+  }
+}
+
+@keyframes pictogram-appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: none;
+  }
+}
