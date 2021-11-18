@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+.Bar_bar__djE1v{width:100%;border-radius:5px 5px 0 0;display:flex;flex-direction:column-reverse;transition:all .2s}.Bar_bar--placeholder__Al0l0:not(.Bar_bar--pictograms__UaSC9){border:2px dashed rgba(255,255,255,0.5);border-bottom:0}.Bar_bar--pictograms__UaSC9{transition:none}.Bar_bar__djE1v .Bar_pictogram__2o_dp{min-height:0;flex:1 1;margin:2px;border-radius:5px;animation:Bar_pictogram-appear__16ZSA .2s}.Bar_bar__djE1v .Bar_pictogram--placeholder__2OIqJ{border:2px dashed rgba(255,255,255,0.5);animation:none}@keyframes Bar_pictogram-appear__16ZSA{0%{transform:scale(0)}100%{transform:none}}
+
+.ChartArea_root__2Sc61{height:100%;width:100%;padding-bottom:2px;display:flex;flex-direction:row}.ChartArea_root__2Sc61 .ChartArea_category__1rjc5{flex:1 1;margin:0 15px;height:100%;display:flex}.ChartArea_root__2Sc61 .ChartArea_category__1rjc5 .ChartArea_series__2WGEZ{flex:1 1;margin:0 3px;height:100%;position:relative}.ChartArea_root__2Sc61 .ChartArea_category__1rjc5 .ChartArea_series__2WGEZ .ChartArea_bar-container__2GJ5y{position:absolute;height:100%;width:100%;display:flex;flex-direction:column;justify-content:flex-end}
+
+.Axis_x-axis-layout-wrapper__2qP_q{position:absolute;bottom:0;right:0;height:38px;width:100%;padding-left:30px}.Axis_x-axis-layout-wrapper__2qP_q .Axis_x-axis__98e-B{height:100%;width:100%;border-top:2px solid white;margin-top:-2px;display:flex;justify-content:space-around}.Axis_x-axis-layout-wrapper__2qP_q .Axis_x-axis-label__ZlikQ{margin-top:4px;flex:1 1;height:34px;display:flex;justify-content:center;font-weight:700}.Axis_y-axis-layout-wrapper__13AUO{position:absolute;left:0;top:0;height:100%;padding-top:30px;padding-bottom:38px;width:30px}.Axis_y-axis-layout-wrapper__13AUO .Axis_y-axis__Ow1Il{height:100%;width:100%;border-right:2px solid white;display:flex;flex-direction:column-reverse;justify-content:space-between}.Axis_y-axis-layout-wrapper__13AUO::before{content:'';display:block;height:30px;width:30px;position:absolute;left:14px;top:0;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-linecap='round' stroke-width='2' preserveAspectRatio='none' viewBox='0 0 20 20'><path vector-effect='non-scaling-stroke' d='M5 9l5-7 5 7M10 2v18'/></svg>")}.Axis_y-axis-layout-wrapper__13AUO .Axis_y-axis-label__1Yfy6{height:0;display:flex;justify-content:flex-end;align-items:center;position:relative;padding-right:10px}.Axis_y-axis-layout-wrapper__13AUO .Axis_y-axis-label__1Yfy6::after{content:'';display:block;height:2px;width:6px;position:absolute;right:0;bottom:0;background:white}
+
+.BarChart_main-container__1iDVZ{position:relative;padding-top:30px;padding-left:30px;padding-bottom:38px;width:100%;height:100%;font-size:18px;line-height:1;color:white}.BarChart_main-container__1iDVZ svg,.BarChart_main-container__1iDVZ img{display:block;width:100%;height:100%}
+
+.ResponsiveEmoji_root__2ojnl{width:100%;height:100%}
+
+.StepperButton_root__2Wc3t{display:inline-block;max-width:100px;width:100%;font-weight:700;font-size:18px}.StepperButton_root__2Wc3t svg,.StepperButton_root__2Wc3t img{min-height:100%;min-width:100%}.StepperButton_button-container__379Rp{position:relative;width:100%;display:flex;grid-gap:3px;gap:3px;color:#333;-webkit-user-select:none;-ms-user-select:none;user-select:none}.StepperButton_button-container__button__1Zqs-{margin:0;height:100%;width:50%;cursor:pointer;transition:background 0.5s, transform 0.2s, box-shadow 0.2s}.StepperButton_button-container__button__1Zqs-:hover{transition:background 0.1s, transform 0.2s, box-shadow 0.2s}.StepperButton_button-container__button__1Zqs-:active{transition:background 0.5s, transform 0.05s, box-shadow 0.05s}.StepperButton_button-container__button--left__3isf6:active,.StepperButton_button-container__button--right__2ZC4c:active{box-shadow:0 0 rgba(255,255,255,0.5)}.StepperButton_button-container__button--left__3isf6{border-radius:25px 5px 5px 25px;color:#fff;background:rgba(255,255,255,0);border:2px solid #fff;border-right-width:0;box-shadow:1.5px 3px 0 rgba(255,255,255,0.5)}.StepperButton_button-container__button--left__3isf6:hover{background:rgba(255,255,255,0.2)}.StepperButton_button-container__button--left__3isf6:active{transform:translate(1.5px, 3px)}.StepperButton_button-container__button--right__2ZC4c{border-radius:5px 25px 25px 5px;color:#000;background:#fff;border:2px solid transparent;border-left-width:0;box-shadow:-1.5px 3px 0 rgba(255,255,255,0.5)}.StepperButton_button-container__button--right__2ZC4c:hover{background:rgba(255,255,255,0.8)}.StepperButton_button-container__button--right__2ZC4c:active{transform:translate(-1.5px, 3px)}.StepperButton_button-container__button__1Zqs-:disabled{pointer-events:none;cursor:unset;opacity:0.1}
+
+.InteractiveBarChart_root-container__32-O1{margin:auto;padding:20px;display:flex;width:100%;height:100%;flex-direction:column}.InteractiveBarChart_chart__2Suty{flex:1 1;margin-bottom:1rem}.InteractiveBarChart_inputs__35Rzy{display:flex;justify-content:space-around;padding-left:30px}.InteractiveBarChart_inputs__35Rzy>*{margin:0 5px}
+
+.ResizableContainer_root__2X2Z0{position:relative;outline:1px dashed rgba(255,255,255,0.3);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;max-height:100%;max-width:100%;display:flex;flex-direction:column}.ResizableContainer_root__2X2Z0 .ResizableContainer_inner__26waC{resize:both;overflow:hidden;max-height:100%;max-width:100%}.ResizableContainer_root__2X2Z0::before,.ResizableContainer_root__2X2Z0::after{display:block;position:absolute;color:rgba(255,255,255,0.3)}.ResizableContainer_root__2X2Z0::before{content:'⇧';font-size:20px;bottom:-30px;right:-10px}.ResizableContainer_root__2X2Z0::after{content:'RESIZABLE';font-size:0.9rem;width:100px;text-align:center;bottom:calc(-30px - 1.1em);right:-50px}
+
+
+/*# sourceMappingURL=main.2a5ead19.chunk.css.map*/

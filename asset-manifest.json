@@ -1,0 +1,31 @@
+{
+  "files": {
+    "0.2069d782.iframe.bundle.js": "./0.2069d782.iframe.bundle.js",
+    "main.css": "./static/css/main.2a5ead19.chunk.css",
+    "main.js": "./main.d030db84.iframe.bundle.js",
+    "main.css.map": "./static/css/main.2a5ead19.chunk.css.map",
+    "runtime~main.js": "./runtime~main.379ed8cf.iframe.bundle.js",
+    "vendors~main.css": "./static/css/vendors~main.33efb9a1.chunk.css",
+    "vendors~main.js": "./vendors~main.6d3b2119.iframe.bundle.js",
+    "vendors~main.css.map": "./static/css/vendors~main.33efb9a1.chunk.css.map",
+    "vendors~main.js.map": "./vendors~main.6d3b2119.iframe.bundle.js.map",
+    "4.e6349fce.iframe.bundle.js": "./4.e6349fce.iframe.bundle.js",
+    "4.e6349fce.iframe.bundle.js.map": "./4.e6349fce.iframe.bundle.js.map",
+    "5.63f84631.iframe.bundle.js": "./5.63f84631.iframe.bundle.js",
+    "6.fdbd001b.iframe.bundle.js": "./6.fdbd001b.iframe.bundle.js",
+    "6.fdbd001b.iframe.bundle.js.map": "./6.fdbd001b.iframe.bundle.js.map",
+    "7.1cf98d27.iframe.bundle.js": "./7.1cf98d27.iframe.bundle.js",
+    "4.e6349fce.iframe.bundle.js.LICENSE.txt": "./4.e6349fce.iframe.bundle.js.LICENSE.txt",
+    "6.fdbd001b.iframe.bundle.js.LICENSE.txt": "./6.fdbd001b.iframe.bundle.js.LICENSE.txt",
+    "iframe.html": "./iframe.html",
+    "static/media/base.css": "./static/media/roboto-vietnamese-700-normal.3096f18a.woff2",
+    "vendors~main.6d3b2119.iframe.bundle.js.LICENSE.txt": "./vendors~main.6d3b2119.iframe.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.379ed8cf.iframe.bundle.js",
+    "static/css/vendors~main.33efb9a1.chunk.css",
+    "vendors~main.6d3b2119.iframe.bundle.js",
+    "static/css/main.2a5ead19.chunk.css",
+    "main.d030db84.iframe.bundle.js"
+  ]
+}
