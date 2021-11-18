@@ -1,11 +1,4 @@
-.root {
-  display: flex;
-  height: 100vh;
-  background: #333;
-  color: white;
-}
-
-.components-container {
+.root-container {
   margin: auto;
   padding: 20px;
   display: flex;
@@ -14,23 +7,16 @@
   flex-direction: column;
 }
 
-.component {
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-  width: 100%;
+.chart {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.inputs {
   display: flex;
   justify-content: space-around;
+  padding-left: 30px;
 
-  &.chart {
-    flex: 1;
-  }
-
-  &.inputs {
-    padding-left: 30px;
-
-    > * {
-      margin: 0 5px;
-    }
+  > * {
+    margin: 0 5px;
   }
 }

@@ -27,42 +27,40 @@ export default function InteractiveBarChart({
   };
 
   return (
-    <div className={cx('root')}>
-      <div className={cx('components-container')}>
-        <div className={cx('component', 'chart')}>
-          <BarChart
-            categories={categories}
-            pictograms={pictograms}
-            series={[
-              {
-                values: answer,
-                placeholders: targetValues,
-                color: color,
-              },
-            ]}
-            max={max}
-          />
-        </div>
+    <div className={cx('root-container')}>
+      <div className={cx('chart')}>
+        <BarChart
+          categories={categories}
+          pictograms={pictograms}
+          series={[
+            {
+              values: answer,
+              placeholders: targetValues,
+              color: color,
+            },
+          ]}
+          max={max}
+        />
+      </div>
 
-        <div className={cx('component', 'inputs')}>
-          <StepperButton
-            onChange={(value) => handleChange(0, value)}
-            max={targetValues[0]}
-            value={answer[0]}
-          />
+      <div className={cx('inputs')}>
+        <StepperButton
+          onChange={(value) => handleChange(0, value)}
+          max={targetValues[0]}
+          value={answer[0]}
+        />
 
-          <StepperButton
-            onChange={(value) => handleChange(1, value)}
-            max={targetValues[1]}
-            value={answer[1]}
-          />
+        <StepperButton
+          onChange={(value) => handleChange(1, value)}
+          max={targetValues[1]}
+          value={answer[1]}
+        />
 
-          <StepperButton
-            onChange={(value) => handleChange(2, value)}
-            max={targetValues[2]}
-            value={answer[2]}
-          />
-        </div>
+        <StepperButton
+          onChange={(value) => handleChange(2, value)}
+          max={targetValues[2]}
+          value={answer[2]}
+        />
       </div>
     </div>
   );

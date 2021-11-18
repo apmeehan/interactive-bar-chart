@@ -14,8 +14,12 @@ export default {
     ),
   ],
   argTypes: {
-    controls: {
-      pictograms: false,
+    max: {
+      control: {
+        type: 'range',
+        max: 20,
+        min: 0,
+      },
     },
   },
 } as Meta;
@@ -31,12 +35,12 @@ Default.args = {
 
 export const MultipleSeries = Template.bind({});
 MultipleSeries.args = {
+  categories: ['A', 'B'],
   series: [
     { values: [3, 2], color: 'hsl(43, 98%, 52%)' },
     { values: [4, 1], color: 'hsl(157, 100%, 21%)' },
     { values: [5, 3], color: 'hsl(357, 70%, 45%)' },
   ],
-  categories: ['A', 'B'],
 };
 
 export const WithPlaceholders = Template.bind({});

@@ -21,7 +21,7 @@ const Template: Story<Props> = (args) => <InteractiveBarChart {...args} />;
 export const Regular = Template.bind({});
 Regular.args = {
   categories: ['Dresses', 'Jackets', 'Shirts'],
-  initialValues: [1, 2, 3],
+  initialValues: [2, 3, 4],
   targetValues: [],
   color: 'deeppink',
 };
@@ -29,7 +29,8 @@ Regular.args = {
 export const WithTargetValues = Template.bind({});
 WithTargetValues.args = {
   ...Regular.args,
-  targetValues: [4, 4, 4],
+  initialValues: [2, 1, 3],
+  targetValues: [2, 3, 4],
 };
 
 export const Pictograms = Template.bind({});
