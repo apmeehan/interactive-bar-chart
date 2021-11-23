@@ -28,7 +28,7 @@ export default function BarChart({
   /**
    * Array of elements representing each of the categories. Works with either images or SVGs
    */
-  pictograms?: JSX.Element[];
+  pictograms?: Array<JSX.Element | undefined>;
   /**
    * The value the y-axis goes up to. Is calculated automatically if this prop isn't provided
    */

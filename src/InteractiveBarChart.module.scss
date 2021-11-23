@@ -7,11 +7,12 @@
   flex-direction: column;
 }
 
-.chart {
+.chart-container {
   flex: 1;
   margin-bottom: 1rem;
 }
-.inputs {
+
+.buttons-container {
   display: flex;
   justify-content: space-around;
   padding-left: 30px;

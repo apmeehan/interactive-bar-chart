@@ -20,26 +20,25 @@ const Template: Story<Props> = (args) => <InteractiveBarChart {...args} />;
 
 export const Regular = Template.bind({});
 Regular.args = {
-  categories: ['Dresses', 'Jackets', 'Shirts'],
-  initialValues: [2, 3, 4],
-  targetValues: [],
+  categories: [{ label: 'Dresses' }, { label: 'Jackets' }, { label: 'Shirts' }],
   color: 'deeppink',
+  initialValues: [2, 3, 4],
 };
 
 export const WithTargetValues = Template.bind({});
 WithTargetValues.args = {
   ...Regular.args,
-  initialValues: [2, 1, 3],
   targetValues: [2, 3, 4],
+  initialValues: [2, 1, 3],
 };
 
 export const Pictograms = Template.bind({});
 Pictograms.args = {
   ...Regular.args,
-  pictograms: [
-    <ResponsiveEmoji emoji="👗" />,
-    <ResponsiveEmoji emoji="🧥" />,
-    <ResponsiveEmoji emoji="👚" />,
+  categories: [
+    { label: 'Dresses', pictogram: <ResponsiveEmoji emoji="👗" /> },
+    { label: 'Jackets', pictogram: <ResponsiveEmoji emoji="🧥" /> },
+    { label: 'Shirts', pictogram: <ResponsiveEmoji emoji="👚" /> },
   ],
 };
 
