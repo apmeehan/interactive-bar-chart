@@ -27,10 +27,21 @@ export default {
 type Props = React.ComponentProps<typeof BarChart>;
 const Template: Story<Props> = (args) => <BarChart {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const SingleSeries = Template.bind({});
+SingleSeries.args = {
+  categories: ['A', 'B', 'C'],
+  series: [{ values: [2, 3, 4], color: 'hsl(330, 90%, 60%)' }],
+};
+
+export const Pictograms = Template.bind({});
+Pictograms.args = {
   categories: ['A', 'B', 'C'],
   series: [{ values: [2, 3, 4] }],
+  pictograms: [
+    <ResponsiveEmoji emoji="🍋" />,
+    <ResponsiveEmoji emoji="🥬" />,
+    <ResponsiveEmoji emoji="🍅" />,
+  ],
 };
 
 export const MultipleSeries = Template.bind({});
@@ -43,18 +54,8 @@ MultipleSeries.args = {
   ],
 };
 
-export const WithFixedAxis = Template.bind({});
-WithFixedAxis.args = {
+export const FixedAxis = Template.bind({});
+FixedAxis.args = {
   ...MultipleSeries.args,
   max: 10,
-};
-
-export const WithPictograms = Template.bind({});
-WithPictograms.args = {
-  ...Default.args,
-  pictograms: [
-    <ResponsiveEmoji emoji="🍋" />,
-    <ResponsiveEmoji emoji="🥬" />,
-    <ResponsiveEmoji emoji="🍅" />,
-  ],
 };

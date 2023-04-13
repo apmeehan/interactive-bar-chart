@@ -12,8 +12,6 @@ export default function ResizableContainer({
   width?: number;
   children?: React.ReactNode;
 }) {
-  console.log('hiiiii');
-
   return (
     <div className={cx('root')}>
       <div

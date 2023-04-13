@@ -1,33 +1,33 @@
-enum Symbol {
-  MINUS = '\u2212',
-  PLUS = '+',
-  LEFT_ARROW = '\u2190',
-  UP_ARROW = '\u2191',
-  RIGHT_ARROW = '\u2192',
-  DOWN_ARROW = '\u2193',
-  LEFT_POINTING_EMOJI = '👈',
-  UP_POINTING_EMOJI = '👆',
-  RIGHT_POINTING_EMOJI = '👉',
-  DOWN_POINTING_EMOJI = '👇',
-}
+type Symbol =
+  | '\u2212'
+  | '+'
+  | '\u2190'
+  | '\u2191'
+  | '\u2192'
+  | '\u2193'
+  | '👈'
+  | '👆'
+  | '👉'
+  | '👇';
 
-export enum SymbolCategory {
-  MATH = 'math',
-  ARROWS = 'arrows',
-  EMOJIS = 'emojis',
-}
+export type SymbolCategory = 'maths' | 'arrows' | 'emojis';
 
-export const BUTTON_SYMBOLS = {
-  [SymbolCategory.MATH]: {
-    increment: Symbol.PLUS,
-    decrement: Symbol.MINUS,
+export const BUTTON_SYMBOLS: {
+  [key in SymbolCategory]: {
+    increment: Symbol;
+    decrement: Symbol;
+  };
+} = {
+  maths: {
+    increment: '+',
+    decrement: '−',
   },
-  [SymbolCategory.ARROWS]: {
-    increment: Symbol.RIGHT_ARROW,
-    decrement: Symbol.LEFT_ARROW,
+  arrows: {
+    increment: '↑',
+    decrement: '↓',
   },
-  [SymbolCategory.EMOJIS]: {
-    increment: Symbol.RIGHT_POINTING_EMOJI,
-    decrement: Symbol.LEFT_POINTING_EMOJI,
+  emojis: {
+    increment: '👆',
+    decrement: '👇',
   },
 };

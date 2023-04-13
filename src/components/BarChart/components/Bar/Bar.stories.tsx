@@ -40,6 +40,7 @@ const Template: Story<Props> = (args) => <Bar {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   length: 75,
+  color: 'hsl(330, 90%, 60%)',
 };
 
 export const Pictograms = Template.bind({});

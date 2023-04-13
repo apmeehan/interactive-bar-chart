@@ -1,9 +1,5 @@
 import classNames from 'classnames/bind';
 import styles from './ResponsiveEmoji.module.scss';
-// import GraphemeSplitter from 'grapheme-splitter';
-
-// const splitter = new GraphemeSplitter();
-// console.log(splitter.splitGraphemes('🌷🎁💩😜👍🏳️‍🌈'));
 
 const cx = classNames.bind(styles);
 

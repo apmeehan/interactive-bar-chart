@@ -49,6 +49,7 @@ export default function InteractiveBarChart({
             onChange={(value) => handleValueChange(i, value)}
             value={values[i]}
             max={max}
+            color={color}
           />
         ))}
       </div>

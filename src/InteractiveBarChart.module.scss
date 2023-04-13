@@ -1,3 +1,5 @@
+@import '/src/components/BarChart/style-constants';
+
 .root {
   margin: auto;
   padding: 20px;
@@ -15,6 +17,7 @@
 .buttons {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
-  padding-left: 30px;
+  margin-left: $y-axis-total-padding;
+  padding: 0 ($CATEGORY_GAP / 2);
+  gap: $CATEGORY_GAP;
 }

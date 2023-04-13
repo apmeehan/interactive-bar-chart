@@ -3,7 +3,7 @@
 .root {
   height: 100%;
   width: 100%;
-  padding-bottom: $AXIS_LINE_WIDTH;
+  padding: 0 ($CATEGORY_GAP / 2);
   display: flex;
   flex-direction: row;
   gap: $CATEGORY_GAP;

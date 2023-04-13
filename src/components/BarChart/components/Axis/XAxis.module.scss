@@ -11,6 +11,7 @@
   width: 100%;
   border-top: $AXIS_LINE_WIDTH solid white;
   margin-top: -$AXIS_LINE_WIDTH;
+  padding: 0 ($CATEGORY_GAP / 2);
   display: flex;
   justify-content: space-around;
   gap: $CATEGORY_GAP;

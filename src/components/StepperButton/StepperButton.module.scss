@@ -1,18 +1,10 @@
+$primary-color: var(--primary-color);
+$primary-color-dark: var(--primary-color-dark);
+$primary-color-light: var(--primary-color-light);
+
 $container-width: 100px;
 
-$hotter-pink: hsl(328, 90%, 60%);
-$primary-color: $hotter-pink;
-
-$increment-color: black;
-$increment-bg-color: white;
-$increment-bg-color--hover: rgba($increment-bg-color, 0.8);
-
-$decrement-color: white;
-$decrement-bg-color: rgba($decrement-color, 0);
-$decrement-bg-color--hover: rgba($decrement-bg-color, 0.2);
-
 $button-travel: 3px;
-$button-edge-color: #888;
 
 $transition-duration--on: 0.2s;
 $transition-duration--off: 0.5s;
@@ -50,37 +42,46 @@ $transition-duration--off: 0.5s;
     width: 50%;
     max-width: 2em;
     border-radius: 9999px;
-    border: 2px solid transparent;
-    box-shadow: 0 $button-travel 0 $button-edge-color;
     cursor: pointer;
+    text-shadow: 0 1.5px rgba(0, 0, 0, 0.3);
 
     &--left {
-      color: $decrement-color;
-      background: $decrement-bg-color;
-      border-color: $increment-bg-color;
+      color: white;
+      background: rgba(100%, 100%, 100%, 0.1);
+      border: 2px solid white;
+      box-shadow: 0 $button-travel 0 rgba(100%, 100%, 100%, 0.4);
+
+      &:hover {
+        background: rgba(100%, 100%, 100%, 0.3);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 rgba(100%, 100%, 100%, 0.4);
+      }
     }
 
     &--right {
-      color: $increment-color;
-      background: $increment-bg-color;
-      border-color: $increment-bg-color;
+      color: white;
+      background: $primary-color;
+      border-color: transparent;
+      box-shadow: 0 $button-travel 0 $primary-color-dark;
+
+      &:hover {
+        background: $primary-color-light;
+      }
+
+      &:active {
+        box-shadow: 0 0 0 $primary-color-dark;
+      }
     }
 
     &:disabled {
       pointer-events: none;
       cursor: unset;
-      opacity: 0.1;
-    }
-
-    &:hover {
-      border-color: $primary-color;
-      background: $primary-color;
-      color: white;
-      box-shadow: 0 $button-travel 0 rgba($primary-color, 0.5);
+      opacity: 0.4;
     }
 
     &:active {
-      box-shadow: 0 0 0 rgba($primary-color, 0.5);
       transform: translateY($button-travel);
     }
 
