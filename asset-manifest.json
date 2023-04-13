@@ -1,0 +1,38 @@
+{
+  "files": {
+    "0.03eba2ac.iframe.bundle.js": "./0.03eba2ac.iframe.bundle.js",
+    "0.03eba2ac.iframe.bundle.js.map": "./0.03eba2ac.iframe.bundle.js.map",
+    "1.fc9d9252.iframe.bundle.js": "./1.fc9d9252.iframe.bundle.js",
+    "1.fc9d9252.iframe.bundle.js.map": "./1.fc9d9252.iframe.bundle.js.map",
+    "2.f3c9197c.iframe.bundle.js": "./2.f3c9197c.iframe.bundle.js",
+    "3.d3400552.iframe.bundle.js": "./3.d3400552.iframe.bundle.js",
+    "main.css": "./static/css/main.872921d1.chunk.css",
+    "main.js": "./main.613c7642.iframe.bundle.js",
+    "main.css.map": "./static/css/main.872921d1.chunk.css.map",
+    "runtime~main.js": "./runtime~main.db141ecb.iframe.bundle.js",
+    "vendors~main.css": "./static/css/vendors~main.292cd9e3.chunk.css",
+    "vendors~main.js": "./vendors~main.f804352c.iframe.bundle.js",
+    "vendors~main.css.map": "./static/css/vendors~main.292cd9e3.chunk.css.map",
+    "vendors~main.js.map": "./vendors~main.f804352c.iframe.bundle.js.map",
+    "7.504b6d5a.iframe.bundle.js": "./7.504b6d5a.iframe.bundle.js",
+    "7.504b6d5a.iframe.bundle.js.map": "./7.504b6d5a.iframe.bundle.js.map",
+    "8.b81e7be0.iframe.bundle.js": "./8.b81e7be0.iframe.bundle.js",
+    "9.d6fb185b.iframe.bundle.js": "./9.d6fb185b.iframe.bundle.js",
+    "10.fc3f82c5.iframe.bundle.js": "./10.fc3f82c5.iframe.bundle.js",
+    "10.fc3f82c5.iframe.bundle.js.map": "./10.fc3f82c5.iframe.bundle.js.map",
+    "0.03eba2ac.iframe.bundle.js.LICENSE.txt": "./0.03eba2ac.iframe.bundle.js.LICENSE.txt",
+    "1.fc9d9252.iframe.bundle.js.LICENSE.txt": "./1.fc9d9252.iframe.bundle.js.LICENSE.txt",
+    "10.fc3f82c5.iframe.bundle.js.LICENSE.txt": "./10.fc3f82c5.iframe.bundle.js.LICENSE.txt",
+    "7.504b6d5a.iframe.bundle.js.LICENSE.txt": "./7.504b6d5a.iframe.bundle.js.LICENSE.txt",
+    "iframe.html": "./iframe.html",
+    "static/media/base.css": "./static/media/roboto-vietnamese-700-normal.3096f18a.woff2",
+    "vendors~main.f804352c.iframe.bundle.js.LICENSE.txt": "./vendors~main.f804352c.iframe.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.db141ecb.iframe.bundle.js",
+    "static/css/vendors~main.292cd9e3.chunk.css",
+    "vendors~main.f804352c.iframe.bundle.js",
+    "static/css/main.872921d1.chunk.css",
+    "main.613c7642.iframe.bundle.js"
+  ]
+}
