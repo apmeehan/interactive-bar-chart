@@ -71,7 +71,7 @@ export default function BarChart({
     ).map((index) => getters.getCategory({ categories }, index));
 
   const getQuantityAxisLabels = () =>
-    Array.from(Array(getMax() + 1), (_, i) => i);
+    Array.from(Array(getMax()), (_, i) => i + 1);
 
   const parsedData = parseData({ series, categories, pictograms });
 

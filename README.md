@@ -1,8 +1,8 @@
-# Interactive Bar Chart
+# Interactive Bar/Pictogram Chart
 
-Built mainly as an exercise to familiarise myself with Storybook.
+Initially made as an exercise to familiarise myself with recent updates to Storybook, before I got a bit carried away...
 
-The fully scalable layout is implemented entirely with divs and CSS rather than SVG, just to see if I could (and also because I wanted to use the bars as containers for icons/emojis, to effectively turn it into a [pictogram chart](https://www.theschoolrun.com/what-pictogram)).
+The fully scalable layout is implemented entirely with Flexbox rather than either SVG (so the bars could be used as containers for icons/emojis, to effectively turn it into a [pictogram chart](https://www.theschoolrun.com/what-pictogram)) or CSS Grid (easier to implement the dimension transitions), and [React Transition Group](https://reactcommunity.org/react-transition-group/) is used for the enter/exit transitions.
 
 [Demo](https://apmeehan.github.io/interactive-bar-chart)
 

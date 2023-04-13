@@ -30,7 +30,7 @@ export default function ResponsiveEmoji({
         y="50"
         className={cx('')}
         style={{
-          fontSize: 100,
+          fontSize: 90,
           textAnchor: 'middle',
           dominantBaseline: 'central',
           ...hueStyle,

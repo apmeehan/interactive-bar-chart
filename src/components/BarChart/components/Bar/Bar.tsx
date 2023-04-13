@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
 import { lighten, adjustHue } from 'polished';
 import styles from './Bar.module.scss';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 const cx = classNames.bind(styles);
 
 function getBarColor(color: string | undefined, hasPictograms: boolean) {
@@ -34,18 +36,37 @@ export function Bar({
   }
 
   return (
-    <div
-      className={cx('bar', { 'bar--pictograms': pictogramCount > 0 })}
+    <TransitionGroup
+      className={cx('bar', {
+        'bar--with-pictograms': pictogram != null,
+      })}
       style={{
         height: `${length}%`,
         background: getBarColor(color, pictogram != null),
       }}
     >
       {Array.from(Array(pictogramCount), (_, i) => (
-        <div key={i} className={cx('pictogram', {})}>
-          {pictogram}
-        </div>
+        <CSSTransition
+          key={i}
+          timeout={500}
+          classNames={{
+            enter: cx('enter'),
+            enterActive: cx('enter-active'),
+            enterDone: cx('enter-done'),
+            exit: cx('exit'),
+            exitActive: cx('exit-active'),
+            exitDone: cx('exit-done'),
+          }}
+        >
+          <div
+            className={cx('pictogram', {
+              'pictogram--in-visible-bar': color != null,
+            })}
+          >
+            {pictogram}
+          </div>
+        </CSSTransition>
       ))}
-    </div>
+    </TransitionGroup>
   );
 }

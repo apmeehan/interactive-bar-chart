@@ -17,12 +17,17 @@
 }
 
 .y-axis-label {
-  height: 0;
+  flex: 1;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   padding-right: $y-axis-tick-length + $QUANTITY_AXIS_LABEL_MARGIN;
+
+  .text {
+    position: relative;
+    top: -0.5em;
+  }
 
   // axis tick
   &::after {
@@ -32,7 +37,24 @@
     width: $y-axis-tick-length;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     background: white;
+  }
+
+  /* ~~~~~~ React Transition Group classes ~~~~~~ */
+  min-height: 0;
+  transition: flex $TRANSITION_DURATION, opacity $TRANSITION_DURATION;
+
+  &.enter {
+    flex: 0;
+    opacity: 0;
+  }
+  &.enter-active {
+    flex: 1;
+    opacity: 1;
+  }
+  &.exit-active {
+    flex: 0;
+    opacity: 0;
   }
 }
