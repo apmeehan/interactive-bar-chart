@@ -1,0 +1,45 @@
+$ARROW_SIZE: 20px;
+$ARROW_OFFSET: 10px;
+$TEXT_WIDTH: 100px;
+
+.root {
+  position: relative;
+  outline: 1px dashed rgba(white, 0.5);
+  height: fit-content;
+  width: fit-content;
+  max-height: 100%;
+  max-width: 100%;
+
+  .inner {
+    resize: both;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    color: rgba(white, 0.5);
+  }
+
+  &::before {
+    content: '⇧';
+    font-size: $ARROW_SIZE;
+    bottom: -$ARROW_SIZE - $ARROW_OFFSET;
+    right: -$ARROW_SIZE / 2;
+  }
+
+  &::after {
+    content: 'RESIZE ME';
+    font-size: 0.9rem;
+    width: $TEXT_WIDTH;
+    text-align: center;
+    bottom: calc(-#{$ARROW_SIZE + $ARROW_OFFSET} - 1.1em);
+    right: -$TEXT_WIDTH / 2;
+  }
+}

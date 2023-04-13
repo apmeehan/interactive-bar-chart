@@ -1,0 +1,25 @@
+@import '/src/components/BarChart/style-constants';
+
+.axis {
+  font-size: $FONT_SIZE;
+  font-weight: $FONT_WEIGHT_BOLD;
+  line-height: 1;
+  color: white;
+}
+
+.x-axis {
+  width: 100%;
+  border-top: $AXIS_LINE_WIDTH solid white;
+  margin-top: -$AXIS_LINE_WIDTH;
+  display: flex;
+  justify-content: space-around;
+  gap: $CATEGORY_GAP;
+}
+
+.x-axis-label {
+  margin-top: $CATEGORY_AXIS_LABEL_MARGIN;
+  flex: 1;
+  height: $x-axis-label-height;
+  display: flex;
+  justify-content: center;
+}

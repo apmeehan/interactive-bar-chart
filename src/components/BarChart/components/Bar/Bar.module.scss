@@ -1,0 +1,23 @@
+@import '/src/components/BarChart/style-constants';
+
+.bar {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  background: $DEFAULT_PRIMARY_COLOR;
+  transition: all $TRANSITION_DURATION;
+
+  // Remove transition for pictogram containers
+  // TODO: Use React Transition Group lib for transitioning entry of pictograms
+  &--pictograms {
+    transition: none;
+  }
+
+  .pictogram {
+    min-height: 0;
+    flex: 1;
+    margin: 2px;
+    border-radius: 5px;
+  }
+}

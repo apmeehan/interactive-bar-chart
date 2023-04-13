@@ -1,0 +1,39 @@
+@import './style-constants';
+
+$category-axis-total-padding: $CATEGORY_LABEL_SIZE + $CATEGORY_AXIS_LABEL_MARGIN;
+$quantity-axis-total-padding: $QUANTITY_AXIS_TICK_LENGTH + $QUANTITY_LABEL_SIZE +
+  $QUANTITY_AXIS_LABEL_MARGIN;
+
+$x-axis-total-padding: $category-axis-total-padding;
+$y-axis-total-padding: $quantity-axis-total-padding;
+
+.main-container {
+  position: relative;
+  padding-left: $y-axis-total-padding;
+  padding-bottom: $x-axis-total-padding;
+  width: 100%;
+  height: 100%;
+
+  svg,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.x-axis-layout-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding-left: $y-axis-total-padding;
+}
+
+.y-axis-layout-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-bottom: $x-axis-total-padding;
+}

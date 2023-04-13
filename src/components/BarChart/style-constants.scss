@@ -1,0 +1,35 @@
+$hotterpink: hsl(328, 90%, 60%);
+
+//----- BAR COLORS -----//
+$DEFAULT_PRIMARY_COLOR: $hotterpink;
+$DEFAULT_COLORS: $DEFAULT_PRIMARY_COLOR, skyblue, darkorange;
+
+//----- CONTENT -----//
+$FONT_SIZE: 18px;
+$CATEGORY_LABEL_SIZE: 34px;
+$QUANTITY_LABEL_SIZE: 20px;
+
+//----- LAYOUT -----//
+$CATEGORY_GAP: 30px;
+$SERIES_GAP: 6px;
+
+$AXIS_LINE_WIDTH: 2px;
+
+$CATEGORY_AXIS_LABEL_MARGIN: 4px;
+$QUANTITY_AXIS_LABEL_MARGIN: 4px;
+
+$QUANTITY_AXIS_TICK_LENGTH: 6px;
+
+//----- CHART ELEMENTS -----//
+$TRANSITION_DURATION: 0.5s;
+
+//----- TYPOGRAPHY ------//
+$FONT_WEIGHT_BOLD: 700;
+
+//----- DERIVED VALUES ------//
+
+$x-axis-label-height: $CATEGORY_LABEL_SIZE;
+$y-axis-tick-length: $QUANTITY_AXIS_TICK_LENGTH;
+$quantity-axis-total-padding: $QUANTITY_AXIS_TICK_LENGTH + $QUANTITY_LABEL_SIZE +
+  $QUANTITY_AXIS_LABEL_MARGIN;
+$y-axis-total-padding: $quantity-axis-total-padding;

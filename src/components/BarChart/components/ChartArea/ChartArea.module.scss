@@ -1,0 +1,32 @@
+@import '/src/components/BarChart/style-constants';
+
+.root {
+  height: 100%;
+  width: 100%;
+  padding-bottom: $AXIS_LINE_WIDTH;
+  display: flex;
+  flex-direction: row;
+  gap: $CATEGORY_GAP;
+
+  .category {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    gap: $SERIES_GAP;
+
+    .series {
+      flex: 1;
+      height: 100%;
+      position: relative;
+
+      .bar-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
